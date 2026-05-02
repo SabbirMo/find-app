@@ -1,5 +1,5 @@
 import 'package:custom_app/core/theme/app_theme.dart';
-import 'package:custom_app/features/auth/login/screen/login_screen.dart';
+import 'package:custom_app/features/nav_bar/screen/custom_nav_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         themeMode: ThemeMode.dark,
         theme: AppTheme.lightTheme,
-        home: const LoginScreen(),
+        home: const CustomNavBar(),
       ),
     );
   }

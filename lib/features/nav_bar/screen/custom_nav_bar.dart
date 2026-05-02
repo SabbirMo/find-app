@@ -1,3 +1,4 @@
+import 'package:custom_app/features/calender/calender_screen.dart';
 import 'package:custom_app/features/nav_bar/provider/nav_bar_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -12,7 +13,7 @@ class CustomNavBar extends ConsumerWidget {
 
     final List<Widget> screens = [
       Center(child: Text('Home Screen')),
-      Center(child: Text('Search Screen')),
+      CalenderScreen(),
       Center(child: Text('Profile Screen')),
     ];
 
@@ -55,9 +56,9 @@ class CustomNavBar extends ConsumerWidget {
                 label: 'Home',
               ),
               NavigationDestination(
-                icon: Icon(Icons.search_outlined),
+                icon: Icon(Icons.calendar_today_rounded),
                 selectedIcon: Icon(Icons.search),
-                label: 'Search',
+                label: 'Calender',
               ),
               NavigationDestination(
                 icon: Icon(Icons.person_outline),

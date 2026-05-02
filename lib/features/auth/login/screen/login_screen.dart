@@ -17,7 +17,6 @@ class LoginScreen extends ConsumerWidget {
     final loginState = ref.watch(loginProvider);
     final loginNotifier = ref.read(loginProvider.notifier);
     return Scaffold(
-      resizeToAvoidBottomInset: false,
       body: Stack(
         children: [
           Image.asset(
